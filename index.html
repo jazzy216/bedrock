@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bedrock — How Computers Actually Work</title>
+  <meta name="description" content="An interactive course from bits and logic gates up through machine language, C#, and web protocols.">
+  <meta name="theme-color" content="#111214">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111214'/%3E%3Cpath d='M7 22h18M7 16h12M7 10h6' stroke='%235ccf8a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Course navigation">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M7 22h18M7 16h12M7 10h6" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>BEDROCK</strong>
+          <small>transistor to HTTP</small>
+        </span>
+      </a>
+      <div class="side-progress">
+        <div class="side-progress-row"><span>Course progress</span><span id="progressPct" class="mono">0%</span></div>
+        <div class="bar"><div class="bar-fill" id="progressBar"></div></div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-foot">
+        <a href="#/glossary">Glossary</a>
+        <a href="#/review">Review deck</a>
+        <button type="button" id="resetBtn" class="linkish">Reset progress</button>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="crumbs" id="crumbs"></div>
+      </header>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <script src="assets/js/highlight.js"></script>
+  <script src="assets/js/widgets.js"></script>
+  <script src="assets/js/lessons.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
